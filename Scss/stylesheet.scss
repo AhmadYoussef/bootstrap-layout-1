@@ -1,0 +1,57 @@
+:root,html,body{
+   font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1900 - 300)));
+}
+%backgroundimage{
+    background-image: url("../images/francesco-ungaro-1179966-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    @extend %backgroundimage;
+    height: 100vh;
+
+}
+main{
+    #firstsec{
+        .fas{
+            font-size:4.5rem; 
+            line-height: 1.2;
+        }
+    }
+    #secsection{
+
+        p{
+            width: 80%;
+        }
+    }
+    #lastsection{
+        @extend %backgroundimage;
+        height: 50vh;
+    }
+}
+footer{
+    .dot{
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: gray;
+        border-radius: 50%;
+        
+    }
+    .fab{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 750px) {
+    .display-2 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+    .display-4{
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+  }
